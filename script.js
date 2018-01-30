@@ -1,3 +1,5 @@
+const tab = []
+
 class Stopwatch {
     constructor(display) {
         this.running = false;
@@ -55,14 +57,7 @@ class Stopwatch {
         this.display.innerText = this.format(this.times);
 		}
 	}
-	writeToList() {
-		if (!this.running) {
-			console.log(this.display.innerText)
-			var element = React.createElement('li', {}, this.display.innerText);
-			ReactDOM.render(element, document.getElementById('app'));
-		}
-	}
-
+	
 }
 
 const stopwatch = new Stopwatch(
@@ -77,8 +72,6 @@ stopButton.addEventListener('click', () => stopwatch.stop());
 var resetButton = document.getElementById('resetCounter');
 resetButton.addEventListener('click', () => stopwatch.resetCount());
 
-var addToListButton = document.getElementById('addToList');
-addToListButton.addEventListener('click', () => stopwatch.writeToList());
 
 	function pad0(value) {
 	    let result = value.toString();
@@ -91,8 +84,6 @@ addToListButton.addEventListener('click', () => stopwatch.writeToList());
 
 
 
-
-			
 			
 
 

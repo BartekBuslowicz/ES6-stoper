@@ -4,6 +4,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var tab = [];
+
 var Stopwatch = function () {
 				function Stopwatch(display) {
 								_classCallCheck(this, Stopwatch);
@@ -83,15 +85,6 @@ var Stopwatch = function () {
 																this.display.innerText = this.format(this.times);
 												}
 								}
-				}, {
-								key: 'writeToList',
-								value: function writeToList() {
-												if (!this.running) {
-																console.log(this.display.innerText);
-																var element = React.createElement('li', {}, this.display.innerText);
-																ReactDOM.render(element, document.getElementById('app'));
-												}
-								}
 				}]);
 
 				return Stopwatch;
@@ -112,11 +105,6 @@ stopButton.addEventListener('click', function () {
 var resetButton = document.getElementById('resetCounter');
 resetButton.addEventListener('click', function () {
 				return stopwatch.resetCount();
-});
-
-var addToListButton = document.getElementById('addToList');
-addToListButton.addEventListener('click', function () {
-				return stopwatch.writeToList();
 });
 
 function pad0(value) {
