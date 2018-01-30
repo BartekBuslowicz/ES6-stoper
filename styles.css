@@ -1,0 +1,14 @@
+body {
+	background-color: rgb(96, 125, 139);
+	text-align: center;
+}
+.stopwatch {
+	color: #BABABA;
+	font-size: 30px;
+}
+a:-webkit-any-link {
+    color: #BABABA;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}

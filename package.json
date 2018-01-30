@@ -1,0 +1,25 @@
+{
+  "name": "14.8react-gif-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "npm run start2 && npm run start3",
+    "start2": "http-server",
+    "start3": "babel script.js --watch --out-file script-compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BartekBuslowicz/14.8React-gif-search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BartekBuslowicz/14.8React-gif-search/issues"
+  },
+  "homepage": "https://github.com/BartekBuslowicz/14.8React-gif-search#readme",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "http-server": "^0.11.1"
+  }
+}
