@@ -6,9 +6,3 @@ body {
 	color: #BABABA;
 	font-size: 30px;
 }
-a:-webkit-any-link {
-    color: #BABABA;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 10px;
-}
